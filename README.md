@@ -29,7 +29,7 @@ componentDidMount: function(){
   // BAD: usually a code smell if you're pass down props to state.
 }
 ```
-* 只适用应用程序的prop数据，不直接使用state，尽量写stateless组件
+* 只使用应用程序的prop数据，不直接使用state，尽量写stateless组件
 
 **Class vs React.createClass**
 
@@ -101,7 +101,7 @@ export default class ReservationCard extends React.Component {
 
 ## 对齐
 
-* 缩进为2空格，当JSX嵌套多层时，行首不会出现太多空白
+* 1tab ＝ 4space，缩进为4空格
 * 对于 `JSX` 语法，遵循下面的对齐风格
 
 ```html
@@ -111,8 +111,8 @@ export default class ReservationCard extends React.Component {
 
   // good
   <Foo
-    superLongParam="bar"
-    anotherSuperLongParam="baz"
+      superLongParam="bar"
+      anotherSuperLongParam="baz"
   />
 
   // if props fit in one line then keep it on the same line
@@ -120,8 +120,8 @@ export default class ReservationCard extends React.Component {
 
   // children get indented normally
   <Foo
-    superLongParam="bar"
-    anotherSuperLongParam="baz"
+      superLongParam="bar"
+      anotherSuperLongParam="baz"
   >
     <Spazz />
   </Foo>
