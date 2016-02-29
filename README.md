@@ -21,6 +21,16 @@
 * 使用 `JSX` 语法
 * 除非是从一个非 `JSX` 文件中初始化 app，否则不要使用 `React.createElement`
 * 尽量不用使用 `mixins`，`mixins` 在React 0.13+版本中 [逐渐放弃使用](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.6enw2vqnq)
+* 行尾分号必加
+
+```js
+// bad
+let name = 'John'
+
+// good
+let name = 'John';
+```
+
 * 不要将prop传给state
 ```js
 // bad
@@ -29,6 +39,7 @@ componentDidMount: function(){
   // BAD: usually a code smell if you're pass down props to state.
 }
 ```
+
 * 只使用应用程序的prop数据，不直接使用state，尽量写stateless组件
 
 **Class vs React.createClass**
