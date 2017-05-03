@@ -454,9 +454,3 @@ const propTypes = {
   // etc
 };
 ```
-
-# jQuery
-
-* 通常来说，避免在组件内部使用jQuery
-* 永远不要在组件中试图使用jQuery操作DOM，所有的功能都能使用状态机机制完成
-* 不要因为异步请求而引入$.ajax，可以使用superagent/fetch等功能更单一的包来代替$.ajax
